@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour
     public AudioClip jump;
     AudioSource playerSFX;
 
+    //public float minX = -3.46f;
+    public float minY = -4.48f;
+    //public float maxX = 4.17f;
+    public float maxY = 0.9f;
 
     public GameObject groundChecker;
     public LayerMask whatIsGround;
@@ -28,6 +32,16 @@ public class PlayerController : MonoBehaviour
         float movementValueY = Input.GetAxis("Vertical");
 
         playerObject.velocity = new Vector2(movementValueX * maxSpeed, movementValueY * maxSpeed);
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxY)
+        {
+            transform.Translate(Vector2.up);
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minY)
+        {
+            transform.Translate(Vector2.down);
+        }
     } 
 	
 }
