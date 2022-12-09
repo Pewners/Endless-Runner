@@ -629,7 +629,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19015a9fae5d09d4aa3d967f60c77dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jump: {fileID: 8300000, guid: ed6d92c251960474491d2a31e4c3b2c2, type: 3}
+  minY: -4.48
+  maxY: 0.9
   groundChecker: {fileID: 2028905634}
   whatIsGround:
     serializedVersion: 2

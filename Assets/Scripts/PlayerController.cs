@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public AudioClip jump;
-    AudioSource playerSFX;
-
-    //public float minX = -3.46f;
     public float minY = -4.48f;
-    //public float maxX = 4.17f;
     public float maxY = 0.9f;
 
     public GameObject groundChecker;
@@ -23,15 +18,14 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerObject = GetComponent<Rigidbody2D>();
-        playerSFX = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
     {
-        float movementValueX = 1.0f;
+        //float movementValueX = 1.0f;
         float movementValueY = Input.GetAxis("Vertical");
 
-        playerObject.velocity = new Vector2(movementValueX * maxSpeed, movementValueY * maxSpeed);
+        //playerObject.velocity = new Vector2(movementValueX * maxSpeed, movementValueY * maxSpeed);
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxY)
         {
