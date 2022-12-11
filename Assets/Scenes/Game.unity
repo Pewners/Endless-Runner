@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 383003446}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1042,6 +1042,7 @@ MonoBehaviour:
   - {fileID: 2454758829144112602, guid: f5ed6cda1b70d0144bfb61c09ba9b7ff, type: 3}
   - {fileID: 4131384365537862138, guid: b2aacc36eea509c419458f71b6d8f3c8, type: 3}
   - {fileID: 5326839239740464868, guid: a7067e7bea3c0834aada1fc0c8f4e850, type: 3}
+  - {fileID: 4267069357042292658, guid: fd023be8c45815446a151b47f976d4f6, type: 3}
   minSpawnTime: 0.5
   maxSpawnTime: 3
 --- !u!1 &1307488480
@@ -1231,6 +1232,7 @@ MonoBehaviour:
   - {fileID: 2454758829144112602, guid: f5ed6cda1b70d0144bfb61c09ba9b7ff, type: 3}
   - {fileID: 4131384365537862138, guid: b2aacc36eea509c419458f71b6d8f3c8, type: 3}
   - {fileID: 5326839239740464868, guid: a7067e7bea3c0834aada1fc0c8f4e850, type: 3}
+  - {fileID: 4267069357042292658, guid: fd023be8c45815446a151b47f976d4f6, type: 3}
   minSpawnTime: 0.5
   maxSpawnTime: 3
 --- !u!1 &1550534316
@@ -1246,7 +1248,7 @@ GameObject:
   - component: {fileID: 1550534317}
   m_Layer: 0
   m_Name: geno run sprite_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1335,6 +1337,50 @@ Transform:
   m_Father: {fileID: 383003443}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1698794568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698794569}
+  - component: {fileID: 1698794570}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698794569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698794568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0283978, y: -0.31651393, z: -32.20658}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1698794570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698794568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34cb2f8e8e74eba419343d51ae392000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
 --- !u!1 &1714560260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,6 +1507,7 @@ MonoBehaviour:
   - {fileID: 2454758829144112602, guid: f5ed6cda1b70d0144bfb61c09ba9b7ff, type: 3}
   - {fileID: 4131384365537862138, guid: b2aacc36eea509c419458f71b6d8f3c8, type: 3}
   - {fileID: 5326839239740464868, guid: a7067e7bea3c0834aada1fc0c8f4e850, type: 3}
+  - {fileID: 4267069357042292658, guid: fd023be8c45815446a151b47f976d4f6, type: 3}
   minSpawnTime: 0.5
   maxSpawnTime: 3
 --- !u!1 &2028905634
@@ -1474,7 +1521,7 @@ GameObject:
   - component: {fileID: 2028905635}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
